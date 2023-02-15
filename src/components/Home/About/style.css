@@ -1,0 +1,76 @@
+.root-about{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../../../images/about.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.about-content{
+    width: 100%;
+    height: 100vh;
+    background: rgba(67, 34, 121, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+        padding-bottom: 0;
+
+}
+
+.about-content-text{
+    width: 50%;
+    padding: 0 5vh;
+}
+
+.about-content-text-all{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about-content-text h1{
+    font-family: 'Prompt';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 54px;
+color: #FFFFFF;
+}
+
+.about-content-text p{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+        letter-spacing: 0.67px;
+    color: #FFFFFF;
+}
+
+.about-content-text b{
+    font-family: 'Prompt';
+    font-weight: bold;
+    color: #67C0FB;
+}
+
+@media (max-width:900px) {
+.about-content{
+        flex-direction: column-reverse;
+    height: auto;
+    padding-bottom: 30vh;
+    }
+
+    .about-content-text{
+        width: 90%;
+    }
+    
+    .about-content-text-all{
+        width: 100%;
+    }
+
+    .img-about{
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        margin: 5vh 0;
+    }
+}

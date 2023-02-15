@@ -1,0 +1,59 @@
+.root-warranty{
+    margin: 0 auto;
+    width: 80%;
+    padding: 25px 0 75px 0;
+}
+
+.root-warranty h1{
+    text-align: center;
+    font-family: 'Prompt';
+    font-style: normal;
+    line-height: 50px;
+    color: #000000;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    margin: 50px 0;
+}
+
+.content-warranty{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.content-warranty-explication{
+    width:30%;
+    margin-right:2vh ;
+}
+
+.content-warranty-explication h2{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+.content-warranty-explication p{
+    font-family: 'Prompt';
+    font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+}
+
+@media (max-width:900px) {
+.root-warranty{
+    margin-top: 30vh;
+}
+.content-warranty{
+    flex-direction: column
+
+}
+.content-warranty-explication{
+    width:100%;
+    text-align: center;
+}
+
+}

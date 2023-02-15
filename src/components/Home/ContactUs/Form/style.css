@@ -1,0 +1,56 @@
+ .form-contact-us{
+    position: relative;
+    width:60%;
+    height: 100%;
+    left: 30%;
+}
+
+.form-contact-us h1{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    margin-bottom: 7vh;
+    margin-top: 7vh;
+}
+
+.form-content-contact-us{
+    margin: 3vh 0;
+}
+
+.form-content-contact-us label{
+    font-family: 'Prompt';
+    font-size: 16px;
+    color: #2C2A2A;
+}
+
+.form-content-contact-us input,textarea{
+    width: 100%;
+    box-sizing: border-box;
+    background: #F8F8F8;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    padding: 2vh 2vh;
+    margin: 2vh 0;
+}
+
+
+.form-content-contact-us button{
+    background: #046BCA;
+    border: 2px solid #046BCA;
+    border-radius: 5px;
+    height: 50px;
+    width: 197px;
+    color: white;
+}
+
+@media (max-width:900px) {
+
+ .form-contact-us{
+    width:80%;
+    padding: 2vh 4vh;
+    left: 0;
+ }
+
+}

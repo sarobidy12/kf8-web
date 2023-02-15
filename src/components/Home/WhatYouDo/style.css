@@ -1,0 +1,106 @@
+.root-what-you-do{
+    padding: 5vh;
+       font-family: 'Prompt';
+    font-style: normal;
+}
+
+.root-what-you-do-h1{ 
+    text-align: center;
+}
+
+.root-what-you-do-p{ 
+    text-align: center;
+    width: 40%;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+.content-what-you-do{
+    display: flex;
+    justify-content: center;
+    margin: 8vh 0;
+}
+
+.content-what-you-do-row{
+    width:30%;
+    margin: 0 5vh;
+}
+
+.content-what-you-do-row-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explication-content-what-you-do-row h1{
+    font-size: 18px;
+}
+
+.explication-content-what-you-do-row p{
+    font-size: 14px;
+}
+
+.align-left{
+    text-align: start;
+}
+
+.align-right{
+    text-align: end;
+}
+
+.align-item-center{
+    display: flex;
+    align-items: center;
+}
+
+.align-justify-space-down{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.view-desktop{
+    display: block;
+}
+
+
+.view-mobile{
+    display: none;
+    
+}
+@media (max-width:900px) {
+
+    .view-desktop{
+        display: none;
+    }
+
+.view-mobile{
+    display: block;
+}
+
+    .content-what-you-do-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .explication-content-what-you-do-mobile{
+        text-align: center;
+    }
+
+    .explication-content-what-you-do-mobile h1{
+        font-size: 18px;
+    }
+    
+    .explication-content-what-you-do-mobile p{
+        font-size: 14px;
+    }
+
+    .root-what-you-do-p{
+    width: 80%;
+    margin: 4vh auto;
+    }
+}

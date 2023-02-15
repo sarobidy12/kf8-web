@@ -1,0 +1,41 @@
+.root-contact-us{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.contact-us-content{
+    width: 50%;
+}
+
+.link-contact-us{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    left: 14%;
+}
+
+.link-contact-us li{
+    display: inline-block;
+    margin-left: 1.5vh;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+
+}
+
+@media (max-width:900px) {
+
+    .root-contact-us{
+        flex-direction: column;
+    }
+
+    .link-contact-us{
+        left: 3%;
+    }
+
+    .contact-us-content{
+        width: 100%;
+    }
+}

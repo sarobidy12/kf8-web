@@ -1,0 +1,19 @@
+.Save{
+    width: 100%;
+}
+
+.img-save{
+    width: 100%;
+}
+.view-save-desktop{
+    position: absolute;
+    margin: 27.5% 3.5%;
+}
+
+@media (max-width:900px) {
+
+.view-save-desktop{
+    display: none;
+}
+
+}

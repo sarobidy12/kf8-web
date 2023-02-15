@@ -1,0 +1,53 @@
+.root-new-explication{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.new-explication-content{
+    width: 35%;
+}
+
+.new-explication-content h1{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+
+.col-new-explication{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.new-explication-align-justify-space-down{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row-new-explication{
+    width: 48%;     
+    margin: 2vh; 
+}
+
+.up-down-img-new-explication{
+    width:100%
+}
+
+@media (max-width:900px) {
+
+    .root-new-explication{
+        flex-direction: column;
+    }
+ 
+    .new-explication-content{
+        width: 90%;
+        margin: 0 auto;
+    }
+}

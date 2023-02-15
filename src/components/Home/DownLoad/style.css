@@ -1,0 +1,47 @@
+.downLoad{
+    padding: 8vh 0vh;
+    background: #F3F3F3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.downLoad ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.downLoad h1{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 3vh;
+    width:50%
+}
+
+.title-dowload-content{
+    width:60%;
+}
+
+@media (max-width:900px) {
+    .title-dowload-content{
+    width:100%;
+    }
+
+.downLoad h1{
+    font-size: 24px;
+    width:100%
+
+}
+    .downLoad{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+ 
+}
