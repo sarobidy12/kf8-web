@@ -59,6 +59,12 @@
 }
 
 @media (max-width:900px) {
+
+.root-Hero{
+    padding-top: 10vh;
+    height: auto;
+}
+
     .content-Hero{
         width:90%;
     }

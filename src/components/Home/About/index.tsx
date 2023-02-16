@@ -5,7 +5,7 @@ import './style.css';
 const About: React.FC = () => {
     return (
         <>
-            <div className="root-about">
+            <div className="root-about" id="About">
                 <div className="about-content">
                     <div>
                         <img

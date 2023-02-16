@@ -1,0 +1,116 @@
+.header{
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    height: 127px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo-icon{
+    width: 127px;
+height: 127px;
+}
+
+.menuHeader {
+    font-family: Avenir2;
+    display: none;
+    background: transparent;
+    transition: 500ms;
+}
+
+.menuHeader ul {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    list-style-type: none;
+}
+
+.menuHeader ul li {
+    margin: 0;
+    padding: 2vh 3vh;
+    display: inline-block;
+    list-style-type: none;
+    cursor: pointer;
+    color: black;
+    background: transparent;
+    font-size: 2.5vh;
+}
+
+.menuHeader ul li  a{
+    color: #2C2A2A;
+    font-family: 'Prompt';
+}
+
+.menuHeader ul li:hover {
+    background-color: rgba(128, 128, 128, 0.685);
+    color: white;
+}
+
+.btnMobile {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btnOpen {
+    width: 30px;
+    margin: 2vh;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .header {
+        width: 95%;
+    position: absolute;
+    left: 0%;
+    height: 90px;
+    background-color: red ;
+    z-index: 120;
+    }
+
+.logo-icon{
+    width: 70px;
+    height: 70px;
+}
+
+    .btnMobile {
+        position: relative;
+    }
+
+    .menuHeader {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: 100;
+        left: 0;
+        background-color:white;
+    }
+
+    .menuHeader ul {
+        width: 100%;
+    }
+
+    .menuHeader ul li {
+        margin: 0;
+        padding: 2vh;
+        width: 100%;
+        text-align: center;
+        font-size: 2.5vh;
+        cursor: pointer;
+        display: block;
+        color: black;
+    }
+
+    .menuHeader ul li:hover {
+        background-color: rgba(128, 128, 128, 0.685);
+        color: white;
+    }
+}
+
+
+ 

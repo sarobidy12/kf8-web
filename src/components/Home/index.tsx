@@ -7,11 +7,13 @@ import DownLoad from "./DownLoad";
 import ContactUs from "./ContactUs";
 import WhatYouDo from "./WhatYouDo";
 import NewExplication from "./NewExplication";
+import { Head } from "../../Common";
 import './style.css';
 
 const Home: React.FC = () => {
     return (
         <div className="home">
+            <Head />
             <div className="root-home">
                 <Hero />
             </div>
@@ -22,6 +24,7 @@ const Home: React.FC = () => {
             <Warranty />
             <DownLoad />
             <ContactUs />
+
         </div>
 
     )

@@ -5,7 +5,7 @@ import './style.css';
 
 const DownLoad: React.FC = () => {
     return (
-        <div className="downLoad">
+        <div className="downLoad" id="downLoad">
             <div className="title-dowload-content">
                 <h1>
                     Télécharger rapidement l’application sur
