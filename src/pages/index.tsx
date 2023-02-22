@@ -1,7 +1,13 @@
 import * as React from "react"
 import { Home } from '../components';
-import type { HeadFC } from "gatsby"
+import type { HeadFC } from "gatsby";
+import favIcon from '../images/logo.png';
 
 export default Home;
 
-export const Head: HeadFC = () => <title>Home Page</title>
+export const Head: HeadFC = () => <>
+    <title>KF8 - LA MEILLEURE SOLUTION DE LIVRAISON EN 2023</title>
+    <meta name="description" content=" Essayer kaf8 c’est l’adopter" />
+    <link rel="icon" type="image/x-icon" href={favIcon} />
+</>
+

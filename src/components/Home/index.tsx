@@ -24,7 +24,6 @@ const Home: React.FC = () => {
             <Warranty />
             <DownLoad />
             <ContactUs />
-
         </div>
 
     )

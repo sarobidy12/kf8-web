@@ -80,6 +80,10 @@
     display: block;
 }
 
+.root-what-you-do-h1{ 
+    font-size: 24px;
+}
+
     .content-what-you-do-mobile{
         display: flex;
         flex-direction: column;
@@ -100,7 +104,8 @@
     }
 
     .root-what-you-do-p{
-    width: 80%;
+    width: 90%;
+    font-size: 15px;
     margin: 4vh auto;
     }
 }

@@ -31,10 +31,21 @@
     list-style-type: none;
 }
 
+.info-ul-social img{
+    cursor: pointer;
+}
+
 .info-ul-contact{
     margin: 0;
     padding: 0;
     list-style-type: none;  
+}
+
+.info-ul-contact a{
+    font-family: 'Prompt';
+    font-style: normal;
+    text-decoration: none;
+    color: #000000;
 }
 
 .info-ul-contact li{

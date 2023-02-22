@@ -5,18 +5,30 @@ import './style.css';
 const About: React.FC = () => {
     return (
         <>
-            <div className="root-about" id="About">
+            <div
+                className="root-about"
+                id="About"
+            >
+
                 <div className="about-content">
+
                     <div>
                         <img
                             src={phoneAbout}
                             alt="Phone about"
                             className="img-about"
+                            data-sal="zoom-in"
+                            data-sal-delay="500"
+                            data-sal-easing="ease"
                         />
                     </div>
 
                     <div className="about-content-text">
-                        <div className="about-content-text-all">
+
+                        <div
+                            className="about-content-text-all"
+                        >
+
                             <h1>
                                 A propos
                             </h1>
@@ -29,10 +41,13 @@ const About: React.FC = () => {
                                 Kf8Transconnect, c’est la force d’un réseau.<br /> <br />
                                 Kf8Transconnect vous invite à prendre le train en marche, celui de l’excellence.<br /> <br />
                             </p>
+
                         </div>
 
                     </div>
+
                 </div>
+
             </div>
         </>
 

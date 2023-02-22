@@ -17,22 +17,39 @@ const NewExplication: React.FC = () => {
                     <div className="col-new-explication">
                         <div className="row-new-explication new-explication-align-justify-space-down">
 
-                            <div>
+                            <div
+                                data-sal="flip-left"
+                                data-sal-delay="500"
+                                data-sal-easing="ease"
+                            >
                                 <img src={upImgExplication} alt="up img explication" className="up-down-img-new-explication" />
                             </div>
 
-                            <div>
+                            <div
+                                data-sal="flip-left"
+                                data-sal-delay="500"
+                                data-sal-easing="ease"
+                            >
                                 <img src={downImgExplication} alt="up img explication" className="up-down-img-new-explication" />
                             </div>
 
                         </div>
-                        <div className="row-new-explication">
+                        <div
+                            className="row-new-explication"
+                            data-sal="flip-right"
+                            data-sal-delay="500"
+                            data-sal-easing="ease"
+                        >
                             <img src={RightImgExplication} alt="up img explication" className="up-down-img-new-explication" />
                         </div>
                     </div>
                 </div>
 
-                <div className="new-explication-content">
+                <div
+                    className="new-explication-content"
+                    data-sal="flip-right"
+
+                >
                     <img src={imgNewExplicationpositionRight} alt="up img explication" className="up-down-img-new-explication" />
                 </div>
             </div>

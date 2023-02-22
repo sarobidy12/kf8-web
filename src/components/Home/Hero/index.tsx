@@ -7,9 +7,12 @@ const Hero: React.FC = () => {
     return (
         <>
             <div className="root-Hero">
+                
                 <div>
 
-                    <div className="content-Hero-right">
+                    <div
+                        className="content-Hero-right"
+                    >
 
                         <h1
                             className="content-Hero-h1"
@@ -19,7 +22,7 @@ const Hero: React.FC = () => {
                         <p
                             className="content-Hero-p"
                         >
-                            Essayer Kaf8 transconnect c'est l'adopter.
+                            Essayer kaf8 c’est l’adopter
                         </p>
 
                         <div className="view-desktop">
@@ -28,7 +31,12 @@ const Hero: React.FC = () => {
 
                     </div>
 
-                    <div className="content-Hero-left">
+                    <div
+                        className="content-Hero-left"
+                        data-sal="zoom-in"
+                        data-sal-delay="500"
+                        data-sal-easing="ease"
+                    >
                         <img src={hero} alt="img phone" className="img-hero" />
                     </div>
 
