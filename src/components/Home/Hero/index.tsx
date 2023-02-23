@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
                 <div>
 
                     <div
-                        className="content-Hero-right"
+                        className="content-Hero-right margin-15"
                     >
 
                         <h1

@@ -1,8 +1,11 @@
+.root-content-new-explication{
+    margin: 10vh;
+}
+
 .root-new-explication{
     width:100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: row;
 }
 
@@ -29,6 +32,10 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.margin-20{
+    margin-top: 10vh;
 }
 
 .row-new-explication{
@@ -58,4 +65,11 @@
         font-size: 24px;
     }
 
+    .margin-20{
+        margin-top: 1vh;
+    }
+
+    .root-content-new-explication{
+        margin: 1vh;
+    }
 }
