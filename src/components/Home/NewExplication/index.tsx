@@ -11,7 +11,7 @@ const NewExplication: React.FC = () => {
             <div className="root-new-explication">
                 <div className="new-explication-content">
                     <h1>
-                        Plus de centaines de prestataires disponibles tous les jours
+                        Des dizaines de prestations disponibles tous les jours dans votre région
                     </h1>
 
                     <div className="col-new-explication">

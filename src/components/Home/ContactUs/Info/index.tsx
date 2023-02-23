@@ -53,14 +53,15 @@ const Info: React.FC = () => {
                             onClick={Click('https://www.instagram.com/kaf8app/')}
                         />
                     </li>
-                    {/* <li>
+                    <li>
                         <img
                             src={iconTikTok}
                             alt="icon tweet"
+                            style={{ position: 'relative', top: 4 }}
                             className="icon-img"
-                            onClick={Click('')}
+                            onClick={Click('https://www.tiktok.com/@kaf8app?is_from_webapp=1&sender_device=pc')}
                         />
-                    </li> */}
+                    </li>
                 </ul>
             </div>
         </div>

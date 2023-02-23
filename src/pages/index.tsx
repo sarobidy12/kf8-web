@@ -7,7 +7,7 @@ export default Home;
 
 export const Head: HeadFC = () => <>
     <title>KF8 - LA MEILLEURE SOLUTION DE LIVRAISON EN 2023</title>
-    <meta name="description" content=" Essayer kaf8 c’est l’adopter" />
+    <meta name="description" content="KF8" />
     <link rel="icon" type="image/x-icon" href={favIcon} />
 </>
 
