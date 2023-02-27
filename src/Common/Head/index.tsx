@@ -1,11 +1,19 @@
-import React, { useEffect, useLayoutEffect } from 'react';
+import React, { FC, useEffect, useLayoutEffect, useState } from 'react';
 import closeIcon from "../../images/close.png";
 import menuIcon from "../../images/menu.png";
 import logoIcon from "../../images/logo.png";
-import { useTranslation } from 'react-i18next';
+import { useTranslation, } from 'react-i18next';
+import BtnSelectLanguage from '../BtnSelectLanguage';
 import './style.css';
 
-const Header = () => {
+interface IHeader {
+    handleOpen: () => void;
+    languageSelected: string;
+}
+
+const Header: FC<IHeader> = ({
+    handleOpen, languageSelected
+}) => {
 
     const { t } = useTranslation('header');
 
@@ -51,6 +59,10 @@ const Header = () => {
         }
     }, [])
 
+    const handleChange = (data: any) => {
+        console.log("data", data)
+    }
+
     return (
         <div className='header' id="header">
             <div>
@@ -94,10 +106,14 @@ const Header = () => {
                                 {t('CONTACTUS')}
                             </a>
                         </li>
+                        <li>
+                            <BtnSelectLanguage
+                                handleOpen={handleOpen} languageSelected={languageSelected}
+                            />
+                        </li>
                     </ul>
                 </div>
             </div>
-
         </div>
     );
 }

@@ -31,12 +31,14 @@ height: 127px;
     padding: 0;
     background: transparent;
     list-style-type: none;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .menuHeader ul li {
     margin: 0;
     padding: 2vh 3vh;
-    display: inline-block;
     list-style-type: none;
     cursor: pointer;
     color: black;
@@ -44,17 +46,18 @@ height: 127px;
     font-size: 2.5vh;
 }
 
-.menuHeader ul li  a{
+.menuHeader ul li a{
     color: #2C2A2A;
     font-family: 'Prompt';
     font-size: 20px;
     text-decoration: none;
 }
 
-.menuHeader ul li:hover {
+
+ .menuHeader ul li:hover {
     background-color: rgba(128, 128, 128, 0.685);
     color: white;
-}
+} 
 
 .btnMobile {
     position: absolute;
@@ -100,6 +103,9 @@ height: 127px;
 
     .menuHeader ul {
         width: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .menuHeader ul li {

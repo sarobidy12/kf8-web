@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import Hero from "./Hero";
 import Save from "./Save";
 import Warranty from "./Warranty";
@@ -8,6 +8,7 @@ import ContactUs from "./ContactUs";
 import WhatYouDo from "./WhatYouDo";
 import NewExplication from "./NewExplication";
 import { Head, Footer } from "../../Common";
+import { ModalSelectLanguage } from "../../Common";
 import { useTranslation } from 'react-i18next';
 import './style.css';
 
@@ -16,11 +17,25 @@ const Home: React.FC = () => {
 
     const { t, i18n } = useTranslation('home');
 
-    i18n.changeLanguage('en');
+    const [open, setOpen] = useState(false);
+
+    const [languageSelected, setLanguageSelected] = useState('en');
+
+    const handleChangeLanguage = (lg: any) => {
+        setLanguageSelected(lg.key);
+        i18n.changeLanguage(lg.key);
+        setOpen(false);
+    }
+
+    const handleOpen = () => {
+        setOpen(true);
+    }
 
     return (
         <div className="home">
-            <Head />
+            <Head
+                handleOpen={handleOpen} languageSelected={languageSelected}
+            />
             <div className="root-home">
                 <Hero />
             </div>
@@ -32,6 +47,11 @@ const Home: React.FC = () => {
             <DownLoad />
             <ContactUs />
             <Footer />
+
+            <ModalSelectLanguage
+                open={open}
+                setLanguage={handleChangeLanguage}
+            />
         </div>
 
     )
