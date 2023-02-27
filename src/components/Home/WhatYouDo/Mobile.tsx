@@ -1,8 +1,12 @@
 import * as React from "react";
 import phoneYouDo from "../../../images/phoneYouDo.png";
+import { Trans, useTranslation } from 'react-i18next';
 import './style.css';
 
 const WhatYouDesktop: React.FC = () => {
+
+    const { t } = useTranslation('home');
+
     return (
         <div className="content-what-you-do-mobile">
 
@@ -22,10 +26,13 @@ const WhatYouDesktop: React.FC = () => {
                 data-sal-easing="ease"
             >
                 <h1>
-                    Trouver des prestataires pour vos courses
+                    {t('WhatYouDo.FindServiceProvidersForYourShopping.h1')}
                 </h1>
                 <p>
-                    La librairie de prestataires dans ta région partout en Europe te permet aujourd’hui d’avoir le choix de contacter directement un prestataire de service (transporteur, livreur…) ou de faire une annonce correspondant à ton besoin
+                    <Trans
+                        i18nKey="WhatYouDo.FindServiceProvidersForYourShopping.p" // optional -> fallbacks to defaults if not provided
+                        components={{ bold: <b /> }}
+                    />
                 </p>
             </div>
 
@@ -36,12 +43,13 @@ const WhatYouDesktop: React.FC = () => {
                 data-sal-easing="ease"
             >
                 <h1>
-                    Devenir prestataire
+                    {t('WhatYouDo.BecomeServiceProvider.h1')}
                 </h1>
                 <p>
-                    Tu es un particulier ayant un moyen de transport et qui a envie de se faire un complément de revenu ? Tu représentantes une entreprise qui veut gagner en visibilité et augmenter son chiffre d’affaires ?
-                    <br /><br />
-                    Alors, inscris toi comme prestataire et ajoute ton moyen de transport et le tour est joué
+                    <Trans
+                        i18nKey="WhatYouDo.BecomeServiceProvider.p" // optional -> fallbacks to defaults if not provided
+                        components={{ bold: <b /> }}
+                    />
                 </p>
             </div>
 
@@ -52,11 +60,13 @@ const WhatYouDesktop: React.FC = () => {
                 data-sal-easing="ease"
             >
                 <h1>
-                    Suivre vos livraisons Internationales
+                    {t('WhatYouDo.TrackYourInternationalDeliveries.h1')}
                 </h1>
                 <p>
-                    Tu es un transporteur international ? Enregistre donc tes clients dans notre système<br /><br />
-                    Grace à notre fonction de tracking ils pourront désormais suivre le statut en temps réel de leur colis à l’international et ceci jusqu’à destination
+                    <Trans
+                        i18nKey="WhatYouDo.TrackYourInternationalDeliveries.p" // optional -> fallbacks to defaults if not provided
+                        components={{ bold: <b /> }}
+                    />
                 </p>
             </div>
 

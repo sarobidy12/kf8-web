@@ -3,9 +3,13 @@ import downImgExplication from "../../../images/downImgExplication.png";
 import upImgExplication from "../../../images/upImgExplication.png";
 import RightImgExplication from "../../../images/RightImgExplication.png";
 import imgNewExplicationpositionRight from "../../../images/imgNewExplicationpositionRight.png";
+import { useTranslation } from 'react-i18next';
 import './style.css';
 
 const NewExplication: React.FC = () => {
+
+    const { t } = useTranslation('home');
+
     return (
         <>
             <div className="root-content-new-explication">
@@ -15,7 +19,7 @@ const NewExplication: React.FC = () => {
                     <div className="new-explication-content">
 
                         <h1>
-                            Des dizaines de prestations disponibles tous les jours dans votre région
+                            {t('NewExplication.title.h1')}
                         </h1>
 
                     </div>

@@ -8,9 +8,16 @@ import ContactUs from "./ContactUs";
 import WhatYouDo from "./WhatYouDo";
 import NewExplication from "./NewExplication";
 import { Head } from "../../Common";
+import { useTranslation } from 'react-i18next';
 import './style.css';
 
+
 const Home: React.FC = () => {
+
+    const { t, i18n } = useTranslation('home');
+
+    i18n.changeLanguage('en');
+
     return (
         <div className="home">
             <Head />
@@ -30,4 +37,3 @@ const Home: React.FC = () => {
 }
 
 export default Home;
-

@@ -1,8 +1,11 @@
 import * as React from "react";
 import phoneAbout from '../../../images/phoneAbout.png';
+import { Trans, useTranslation } from 'react-i18next';
 import './style.css';
 
 const About: React.FC = () => {
+    const { t } = useTranslation('home');
+
     return (
         <>
             <div
@@ -30,16 +33,14 @@ const About: React.FC = () => {
                         >
 
                             <h1>
-                                A propos
+                                {t('about.title.h1')}
                             </h1>
 
                             <p>
-                                Tout à commencé lorsque <b> Marc GONCALVES CEO de Kaf8 a voulu </b>organiser son déménagement. Très vite, il se rendit compte de la difficulté d’avoir un prestataire (particulier ou professionnel) de services sérieux et dont les tarifs n’étaient pas « à la tête du client ». Malgré l’existence de services de transports de qualité, ceux-ci ne sont pas ou peu visibles et accessibles pour le client lambda à tout moment.
-                                C’est ainsi qu’est partie l’idée de rassembler des prestataires professionnels désireux de gagner en visibilité web et prestataires particuliers réguliers ou occasionnels sur la même plate-forme et au service du client. <b> Aujourd’hui, des conducteurs de vélo, scooter, véhicule, camionnette, dépanneuse, ou semi-remorque </b> nous ont fait confiance et ont le contrôle. Le développement des échanges nationaux et internationaux induit l’accroissement du frêt et par voie de conséquences nous invite à adopter une nouvelle attitude, un autre regard sur notre mode de vie, notre organisation ; celle de servir notre prochain. Ainsi, nous avons développé un réseau tels de fourmis avec toute une organisation, une discipline qui nous font avancer dans la bonne direction.<br /> <br />
-                                La solution fonctionne car elle offre à chaque prestataire quel qu’il soit la possibilité de pratiquer instantanément le tarif qui correspond le mieux à divers paramètres tels que sa position, le type de moyen de transport utilisé, la météo, les conditions de circulation… et ceci dans le respect de la clientèle.<br />
-                                Kaf8 est une communauté qui grandit et se développe grâce à vous.<br /> <br />
-                                Kaf8, c’est la force d’un réseau.<br /> <br />
-                                Kaf8 vous invite à prendre le train en marche, celui de l’excellence.<br /> <br />
+                                <Trans
+                                    i18nKey="about.title.p" // optional -> fallbacks to defaults if not provided
+                                    components={{ bold: <b /> }}
+                                />
                             </p>
 
                         </div>

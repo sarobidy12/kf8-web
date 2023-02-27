@@ -1,9 +1,13 @@
 import * as React from "react";
 import Desktop from "./Desktop";
 import Mobile from "./Mobile";
+import { useTranslation } from 'react-i18next';
 import './style.css';
 
 const WhatYouDo: React.FC = () => {
+
+    const { t } = useTranslation('home');
+
     return (
         <div className="root-what-you-do">
 
@@ -13,7 +17,7 @@ const WhatYouDo: React.FC = () => {
                 data-sal-delay="500"
                 data-sal-easing="ease"
             >
-                Ce que nous vous permettrons de faire
+                {t('WhatYouDo.title.h1')}
             </h1>
 
             <p
@@ -22,7 +26,7 @@ const WhatYouDo: React.FC = () => {
                 data-sal-delay="500"
                 data-sal-easing="ease"
             >
-                Avec la vocation Européenne de Kaf8, la recherche de prestataires du transport et de la livraison n’aura jamais été aussi aisée.
+                {t('WhatYouDo.title.p')}
             </p>
 
             <div className="view-desktop">

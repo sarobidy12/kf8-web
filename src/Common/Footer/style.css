@@ -1,0 +1,23 @@
+.link-contact-us{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    left: 14%;
+}
+
+.link-contact-us li{
+    display: inline-block;
+    margin-left: 1.5vh;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+
+}
+
+@media (max-width:900px) {
+    
+    .link-contact-us{
+        left: 3%;
+    }
+   
+}

@@ -26,6 +26,8 @@ const ContactUS: React.FC = () => {
                     Politique de confidentialité
                 </li>
             </ul>
+
+            
         </>
 
     )

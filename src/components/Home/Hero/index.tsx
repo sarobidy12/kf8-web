@@ -1,13 +1,17 @@
 import * as React from "react";
 import hero from "../../../images/hero.png";
 import { BtnDowload } from "../../../Common";
+import { useTranslation } from 'react-i18next';
 import './style.css';
 
 const Hero: React.FC = () => {
+
+    const { t } = useTranslation('home');
+
     return (
         <>
             <div className="root-Hero">
-                
+
                 <div>
 
                     <div
@@ -17,12 +21,12 @@ const Hero: React.FC = () => {
                         <h1
                             className="content-Hero-h1"
                         >
-                            LA MEILLEURE SOLUTION DE LIVRAISON EN 2023
+                            {t('hero.h1')}
                         </h1>
                         <p
                             className="content-Hero-p"
                         >
-                            Essayer kaf8 c’est l’adopter
+                            {t('hero.p')}
                         </p>
 
                         <div className="view-desktop">

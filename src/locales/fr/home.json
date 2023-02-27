@@ -1,0 +1,78 @@
+{
+ "hero":{
+  "h1":" LA MEILLEURE SOLUTION DE LIVRAISON EN 2023",
+  "p":" Essayer kaf8 c’est l’adopter"
+ },
+ "WhatYouDo":{
+    "title":{
+      "h1":" Ce que nous vous permettrons de faire",
+      "p":"Avec la vocation Européenne de Kaf8, la recherche de prestataires du transport et de la livraison n’aura jamais été aussi aisée."
+    },
+    "FindServiceProvidersForYourShopping":{
+      "h1": "Trouver des préstataires pour vos courses",
+      "p": "La librairie de prestataires dans ta région partout en Europe te permet aujourd’hui d’avoir le choix de contacter directement un prestataire de service (transporteur, livreur…) ou de faire une annonce correspondant à ton besoin"
+    },
+    "BecomeServiceProvider":{
+      "h1": "Devenir préstataire",
+      "p": "Tu es un particulier ayant un moyen de transport et qui a envie de se faire un complément de revenu ? Tu représentantes une entreprise qui veut gagner en visibilité et augmenter son chiffre d’affaires ?<br /> <br />Alors, inscris toi comme prestataire et ajoute ton moyen de transport et le tour est joué"
+    },
+    "TrackYourInternationalDeliveries":{
+      "h1": "Suivre vos livraisons Internationales",
+      "p": " Tu es un transporteur international ? Enregistre donc tes clients dans notre système <br /> <br /> Grace à notre fonction de tracking ils pourront désormais suivre le statut en temps réel de leur colis à l’international et ceci jusqu’à destination"
+    }
+ },
+ "NewExplication":{
+  "title":{
+    "h1":" Des dizaines de prestations disponibles tous les jours dans votre région"
+  }
+ },
+ "about":{
+  "title":{
+    "h1":"A propos",
+    "p":"Tout à commencé lorsque <bold> Marc GONCALVES CEO de Kaf8 a voulu </bold> organiser son déménagement. Très vite, il se rendit compte de la difficulté d’avoir un prestataire (particulier ou professionnel) de services sérieux et dont les tarifs n’étaient pas « à la tête du client ». Malgré l’existence de services de transports de qualité, ceux-ci ne sont pas ou peu visibles et accessibles pour le client lambda à tout moment. C’est ainsi qu’est partie l’idée de rassembler des prestataires professionnels désireux de gagner en visibilité web et prestataires particuliers réguliers ou occasionnels sur la même plate-forme et au service du client. <bold> Aujourd’hui, des conducteurs de vélo, scooter, véhicule, camionnette, dépanneuse, ou semi-remorque </bold> nous ont fait confiance et ont le contrôle. Le développement des échanges nationaux et internationaux induit l’accroissement du frêt et par voie de conséquences nous invite à adopter une nouvelle attitude, un autre regard sur notre mode de vie, notre organisation ; celle de servir notre prochain. Ainsi, nous avons développé un réseau tels de fourmis avec toute une organisation, une discipline qui nous font avancer dans la bonne direction.<br /> <br /> La solution fonctionne car elle offre à chaque prestataire quel qu’il soit la possibilité de pratiquer instantanément le tarif qui correspond le mieux à divers paramètres tels que sa position, le type de moyen de transport utilisé, la météo, les conditions de circulation… et ceci dans le respect de la clientèle.<br /> Kaf8 est une communauté qui grandit et se développe grâce à vous.<br /> <br /> Kaf8, c’est la force d’un réseau.<br /> <br /> Kaf8 vous invite à prendre le train en marche, celui de l’excellence.<br /> <br />"
+  }
+},
+"OurGuarantees":{
+  "title":{
+    "h1":" Nos garanties"
+  },
+  "Security":{
+    "h1":"Sécurité",
+    "p":"La sécurité reste la priorité chez Kaf8 et est liée à la recherche de valeurs essentielles dont l’honnêteté, la fiabilité et le respect."
+  },
+  "Punctuality":{
+    "h1":"Ponctualité",
+    "p":"La sécurité reste la priorité chez Kaf8 et est liée à la recherche de valeurs essentielles dont l’honnêteté, la fiabilité et le respect."
+  },
+  "Assurance":{
+    "h1":"Sécurité",
+    "p":" Kaf8 , c’est l’assurance d’avoir 24h/24 un service rapide, de qualité avec des prestataires qui ont le souci du détail et à qui vous pouvez attribuer une note après chaque prestation"
+  }
+},
+"DownLoad":{
+  "title":{
+    "h1":"Télécharger rapidement l’application sur"
+  }
+},
+"ContactUs":{
+  "title":{
+    "h1":" Nous contacter",
+    "p":"N’hésitez pas à nous contacter.  Nous nous ferons le plaisir de vous répondre dans les meilleurs délais"
+  },
+  "YourName":{
+    "label":"Votre nom",
+    "placeholder":"Entrer votre nom ici"
+  },
+  "EmailAddress":{
+    "label":"Adresse e-mail",
+    "placeholder":"Entrer adresse e-mail"
+  },
+  "Message":{
+    "label":"Message",
+    "placeholder":"Décrivez ici votre requête..."
+  },
+  "btn":{
+    "label":"Envoyer"
+  }
+}
+}

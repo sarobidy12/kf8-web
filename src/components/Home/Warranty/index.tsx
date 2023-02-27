@@ -1,13 +1,17 @@
 import * as React from "react";
+import { useTranslation } from 'react-i18next';
 import './style.css';
 
 const Warranty: React.FC = () => {
+
+    const { t } = useTranslation('home');
+
     return (
         <>
             <div className="root-warranty">
 
                 <h1>
-                    Nos garanties
+                    {t('OurGuarantees.title.h1')}
                 </h1>
 
                 <div className="content-warranty">
@@ -19,11 +23,11 @@ const Warranty: React.FC = () => {
                         data-sal-easing="ease"
                     >
                         <h2>
-                            Sécurité
+                            {t('OurGuarantees.Security.h1')}
                         </h2>
 
                         <p>
-                            La sécurité reste la priorité chez Kaf8 et est liée à la recherche de valeurs essentielles dont l’honnêteté, la fiabilité et le respect.
+                            {t('OurGuarantees.Security.p')}
                         </p>
                     </div>
 
@@ -34,10 +38,10 @@ const Warranty: React.FC = () => {
                         data-sal-easing="ease"
                     >
                         <h2>
-                            Ponctualité
+                            {t('OurGuarantees.Punctuality.h1')}
                         </h2>
                         <p>
-                            La sécurité reste la priorité chez Kaf8 et est liée à la recherche de valeurs essentielles dont l’honnêteté, la fiabilité et le respect.
+                            {t('OurGuarantees.Punctuality.p')}
                         </p>
                     </div>
 
@@ -48,11 +52,11 @@ const Warranty: React.FC = () => {
                         data-sal-easing="ease"
                     >
                         <h2>
-                            Assurance
+                            {t('OurGuarantees.Assurance.h1')}
                         </h2>
 
                         <p>
-                            Kaf8 , c’est l’assurance d’avoir 24h/24 un service rapide, de qualité avec des prestataires qui ont le souci du détail et à qui vous pouvez attribuer une note après chaque prestation
+                            {t('OurGuarantees.Assurance.p')}
                         </p>
                     </div>
 

@@ -1,0 +1,80 @@
+{
+  "hero":{
+   "h1":"THE BEST DELIVERY SOLUTION IN 2023",
+   "p":"To try kaf8 is to adopt it"
+  },
+  "WhatYouDo":{
+    "title":{
+      "h1":"What we will allow you to do",
+      "p":"With the European vocation of Kaf8, Searching  for transport and delivery service providers has never been easier."
+    },
+    "FindServiceProvidersForYourShopping":{
+      "h1": "Find service providers for your shopping",
+      "p": "The library of service providers in your  area throughout Europe now allows you to have the choice of directly contacting a service provider (carrier, delivery person, etc.) or making an ad corresponding to your needs."
+    },
+    "BecomeServiceProvider":{
+      "h1": "Become a service provider",
+      "p": "Are you an individual with a means of transport and who wants to make additional income? Do you represent a company that wants to gain visibility and increase its turnover? <br /><br /> So, register as a service provider and add your means of transport and done"
+    },
+    "TrackYourInternationalDeliveries":{
+      "h1": "Track your International deliveries",
+      "p": "Are you an international carrier? Register your customers in our system <br /><br /> Thanks to our tracking function,  your customers will now be able to follow the real-time status of their international parcels to destination."
+    }
+ },
+ "NewExplication":{
+  "title":{
+    "h1":"Dozens of services available every day in your Location"
+  }
+ },
+ "about":{
+
+ "title":{
+  "h1":"ABOUT US",
+  "p": "In regards to It all started <bold> when Marc GONCALVES CEO of Kaf8 wanted  </bold> to organize his move. Very quickly, he realized the difficulty of having a real service provider (individual or professional) whose prices were not “at the head of the customer”. Despite the existence of quality transport services, these are not or hardly visible and accessible to the average customer at all times. This is how comes the idea of ​​bringing together professional service providers wishing to gain web visibility and regular or occasional private service providers on the same platform and at the service of the customer came about.<bold> Today, drivers of bicycles, scooters, vehicles, vans, tow trucks, or semi-trailers </bold>  have trusted us and are in control. The development of national and international exchanges leads to an increase in freight and consequently invites us to adopt a new attitude, another look at our way of life, our organization; that of serving our neighbour. Thus, we have developed such a network of ants with a whole organization, a discipline that makes us move in the right direction. <br /><br/> The solution works fine because it offers each service provider, whatever it may be, the possibility of instantly charging the rate that best corresponds to various parameters such as its position, the type of transport means used, the weather, traffic conditions, etc. this with customers respect.<br /><br /> Kaf8 is a community that grows and develops thanks to you. <br /> <br /> Kaf8 is the strength of a network. Kaf8 invites you to jump on the bandwagon, that of excellence."
+}
+},
+"OurGuarantees":{
+    "title":{
+    "h1":" Our guarantees"
+  },
+ "Security":{
+  "h1":"Security",
+  "p":"Safety remains the priorityof Kaf8 and is linked to the search for essential values ​​including honesty, reliability and respect."
+},
+"Punctuality":{
+  "h1":"Punctuality",
+  "p":"Safety remains the priorityof Kaf8 and is linked to the search for essential values ​​including honesty, reliability and respect."
+},
+"Assurance":{
+  "h1":"Assurance",
+  "p":"Kaf8 is the guarantee of having a fast, quality service 24 hours a day with service providers who pay attention to detail and to whom you can give a score after each service"
+}
+},
+"DownLoad":{
+  "title":{
+    "h1":"Quickly download the application on"
+  }
+},
+"ContactUs":{
+  "title":{
+    "h1":"Contact us",
+    "p":"Do not hesitate to contact us. We will be happy to answer you as soon as possible."
+
+  },
+  "YourName":{
+    "label":"Your name",
+    "placeholder":"Enter your name here"
+  },
+  "EmailAddress":{
+    "label":"E-mail address",
+    "placeholder":"Enter email address"
+  },
+  "Message":{
+    "label":"Message",
+    "placeholder":"Describe your request here..."
+  },
+  "btn":{
+    "label":"send"
+  }
+}
+}

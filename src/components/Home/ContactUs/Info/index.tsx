@@ -4,9 +4,13 @@ import iconInsta from "../../../../images/iconInsta.png";
 import iconFB from "../../../../images/iconFB.png";
 import iconMessage from "../../../../images/iconMessage.png";
 import iconTikTok from "../../../../images/iconTikTok.png";
+import { useTranslation } from 'react-i18next';
+
 import './style.css';
 
 const Info: React.FC = () => {
+
+    const { t } = useTranslation('home');
 
     const Click = (link: string) => (e: any) => {
         (window as any).open(link, '_blank');
@@ -33,7 +37,7 @@ const Info: React.FC = () => {
                 </ul>
 
                 <p>
-                    N’hésitez pas à nous contacter.  Nous nous ferons le plaisir de vous répondre dans les meilleurs délais
+                    {t('ContactUs.title.p')}
                 </p>
 
                 <ul className="info-ul-social">
