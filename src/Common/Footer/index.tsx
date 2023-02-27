@@ -1,20 +1,26 @@
 import * as React from "react";
+import { useTranslation } from 'react-i18next';
 import './style.css';
 
 const Footer: React.FC = () => {
+
+    const { t } = useTranslation('footer');
+
     return (
         <>
             <ul className="link-contact-us">
                 <li>
-                    Mentions légales & CGU
+                    {t('link.Legalnotices')}
                 </li>
                 <li>
-                    Politique de confidentialité
+                    {t('link.CsPrivacyPolicy')}
                 </li>
             </ul>
 
             <footer>
-                <p>Created by Career Karma. © 2020</p>
+                <p>
+                    {t('copyRigth')}
+                </p>
             </footer>
 
         </>

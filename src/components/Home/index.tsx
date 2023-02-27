@@ -7,7 +7,7 @@ import DownLoad from "./DownLoad";
 import ContactUs from "./ContactUs";
 import WhatYouDo from "./WhatYouDo";
 import NewExplication from "./NewExplication";
-import { Head } from "../../Common";
+import { Head, Footer } from "../../Common";
 import { useTranslation } from 'react-i18next';
 import './style.css';
 
@@ -31,6 +31,7 @@ const Home: React.FC = () => {
             <Warranty />
             <DownLoad />
             <ContactUs />
+            <Footer />
         </div>
 
     )

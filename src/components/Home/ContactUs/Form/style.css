@@ -45,6 +45,11 @@
     color: white;
 }
 
+.form-content-contact-us button:hover{
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
 @media (max-width:900px) {
 
  .form-contact-us{

@@ -1,9 +1,52 @@
-import * as React from "react";
+
+import React, { useState } from "react";
 import { useTranslation } from 'react-i18next';
+import { contactUs } from "../../../../Api";
+import { Alert } from 'theme-ui';
 import './style.css';
 
 const Form: React.FC = () => {
     const { t } = useTranslation('home');
+
+    const [handleChange, sethandleChange] = useState<any>({});
+    const [response, setResponse] = useState<any>(null);
+
+    const [loading, setLoading] = useState<boolean>(false);
+
+    const onSubmit = async (e: any) => {
+
+        e.preventDefault();
+        e.stopPropagation();
+        setResponse(null);
+        setLoading(true);
+
+        try {
+            const resonse = await contactUs(handleChange);
+            setResponse({
+                text: t('ContactUs.success.label'),
+                variant: "highlight"
+            })
+        } catch {
+            setResponse({
+                text: t('ContactUs.error.label'),
+                variant: "accent"
+            })
+        } finally {
+            setLoading(false);
+        }
+
+    }
+
+    const handChangeInput = (e: any) => {
+
+        const { value, name } = e.target;
+
+        sethandleChange({
+            ...handleChange,
+            [name]: value
+        });
+
+    }
 
     return (
         <div className="form-contact-us">
@@ -12,46 +55,82 @@ const Form: React.FC = () => {
                 {t('ContactUs.title.h1')}
             </h1>
 
-            <div className="form-content-contact-us">
-                <label for="name">
-                    {t('ContactUs.YourName.label')}
-                </label>
-                <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder={`${t('ContactUs.YourName.placeholder')}`}
-                />
-            </div>
+            <form method="post" onSubmit={onSubmit}>
+                <div className="form-content-contact-us">
+                    <label for="fullName">
+                        {t('ContactUs.YourName.label')}
+                    </label>
+                    <input
+                        type="text"
+                        name="fullName"
+                        required={true}
+                        id="fullName"
+                        disabled={loading}
+                        value={handleChange?.fullName || ""}
+                        placeholder={`${t('ContactUs.YourName.placeholder')}`}
+                        onChange={handChangeInput}
+                    />
+                </div>
 
-            <div className="form-content-contact-us">
-                <label for="email">
-                    {t('ContactUs.EmailAddress.label')}
-                </label>
-                <input
-                    type="text"
-                    name="email"
-                    id="email"
-                    placeholder={`${t('ContactUs.EmailAddress.placeholder')}`}
-                />
-            </div>
+                <div className="form-content-contact-us">
+                    <label for="email">
+                        {t('ContactUs.EmailAddress.label')}
+                    </label>
+                    <input
+                        type="text"
+                        disabled={loading}
+                        name="email"
+                        required={true}
+                        id="email"
+                        value={handleChange?.email || ""}
+                        placeholder={`${t('ContactUs.EmailAddress.placeholder')}`}
+                        onChange={handChangeInput}
+                    />
+                </div>
 
-            <div className="form-content-contact-us">
-                <label for="name">
-                    {t('ContactUs.Message.label')}
-                </label>
-                <textarea
-                    name="name"
-                    id="name"
-                    placeholder={`${t('ContactUs.Message.placeholder')}`}
-                />
-            </div>
+                <div className="form-content-contact-us">
 
-            <div className="form-content-contact-us">
-                <button type="submit">
-                    {t('ContactUs.btn.label')}
-                </button>
-            </div>
+                    <label for="description">
+                        {t('ContactUs.Message.label')}
+                    </label>
+
+                    <textarea
+                        name="description"
+                        id="description"
+                        disabled={loading}
+                        value={handleChange?.description || ""}
+                        required={true}
+                        placeholder={`${t('ContactUs.Message.placeholder')}`}
+                        onChange={handChangeInput}
+                    />
+
+                </div>
+
+
+                <div className="form-content-contact-us">
+
+                    {
+                        response && (
+                            <Alert variant={response.variant} mb={2}>{response.text}</Alert>
+                        )
+                    }
+
+                    <button type="submit">
+                        {
+                            loading ? (
+                                <>
+                                    {t('ContactUs.btn.loading')}
+
+                                </>
+                            ) : (
+                                <>
+                                    {t('ContactUs.btn.label')}
+                                </>
+                            )
+                        }
+                    </button>
+                </div>
+            </form>
 
         </div>
     )

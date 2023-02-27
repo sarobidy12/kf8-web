@@ -2,9 +2,12 @@ import React, { useEffect, useLayoutEffect } from 'react';
 import closeIcon from "../../images/close.png";
 import menuIcon from "../../images/menu.png";
 import logoIcon from "../../images/logo.png";
+import { useTranslation } from 'react-i18next';
 import './style.css';
 
 const Header = () => {
+
+    const { t } = useTranslation('header');
 
     const open = () => {
         (document as any).getElementById('menu').style.display = 'block';
@@ -77,13 +80,19 @@ const Header = () => {
                 <div id="menu" className='menuHeader'>
                     <ul>
                         <li>
-                            <a href="#About" onClick={close}>A propos</a>
+                            <a href="#About" onClick={close}>
+                                {t('ABOUTUS')}
+                            </a>
                         </li>
                         <li>
-                            <a href="#downLoad" onClick={close}> Téléchager l’application</a>
+                            <a href="#downLoad" onClick={close}>
+                                {t('DOWNLOADAPP')}
+                            </a>
                         </li>
                         <li>
-                            <a href="#contact-us" onClick={close}> Nous contacter</a>
+                            <a href="#contact-us" onClick={close}>
+                                {t('CONTACTUS')}
+                            </a>
                         </li>
                     </ul>
                 </div>

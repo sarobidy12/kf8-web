@@ -18,16 +18,6 @@ const ContactUS: React.FC = () => {
 
             </div>
 
-            <ul className="link-contact-us">
-                <li>
-                    Mentions légales & CGU
-                </li>
-                <li>
-                    Politique de confidentialité
-                </li>
-            </ul>
-
-            
         </>
 
     )

@@ -74,7 +74,15 @@
     "placeholder":"Describe your request here..."
   },
   "btn":{
-    "label":"send"
+    "label":"send",
+    "loading":"loading..."
+
+  },
+  "error":{
+    "label": "An error has occurred"
+  },
+  "success":{
+    "label":"Message has been change"
   }
 }
 }

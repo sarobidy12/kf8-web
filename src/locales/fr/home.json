@@ -72,7 +72,14 @@
     "placeholder":"Décrivez ici votre requête..."
   },
   "btn":{
-    "label":"Envoyer"
+    "label":"Envoyer",
+    "loading":"Chargement..."
+  },
+  "error":{
+    "label":"Une erreur est survenue"
+  },
+  "success":{
+    "label":"Message a bien ete envoyer"
   }
 }
 }
