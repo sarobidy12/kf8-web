@@ -24,12 +24,12 @@ const Form: React.FC = () => {
             const resonse = await contactUs(handleChange);
             setResponse({
                 text: t('ContactUs.success.label'),
-                variant: "highlight"
+                classe: "contact-us-success"
             })
         } catch {
             setResponse({
                 text: t('ContactUs.error.label'),
-                variant: "accent"
+                classe: "contact-us-error"
             })
         } finally {
             setLoading(false);
@@ -111,7 +111,9 @@ const Form: React.FC = () => {
 
                     {
                         response && (
-                            <Alert variant={response.variant} mb={2}>{response.text}</Alert>
+                            <div className={response.classe}>
+                                {response.text}
+                            </div>
                         )
                     }
 

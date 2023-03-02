@@ -26,14 +26,16 @@ i18n
         home: require("../locales/fr/home.json"),
         footer: require("../locales/fr/footer.json"),
         header: require("../locales/fr/header.json"),
+        privacyPolicy: require("../locales/fr/privacy-policy.json"),
       },
       en: {
         home: require("../locales/en/home.json"),
         footer: require("../locales/en/footer.json"),
         header: require("../locales/en/header.json"),
+        privacyPolicy: require("../locales/en/privacy-policy.json"),
       },
     },
-    ns: ["home", "footer"],
+    ns: ["home", "footer", "header", "privacyPolicy"],
     //   defaultNS: "translations",
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default

@@ -1,15 +1,14 @@
 import * as React from "react"
-import { Home } from '../components';
+import { PrivacyPolicy } from '../components';
 import type { HeadFC } from "gatsby";
 import favIcon from '../images/favicon.ico';
 import appleTouchIcon from '../images/apple-touch-icon.png';
 import favicon32 from '../images/favicon-32x32.png';
 import favicon16 from '../images/favicon-16x16.png';
-import webmanifest from '../images/site.webmanifest';
 import safariPinnedTab from '../images/safari-pinned-tab.svg';
 import '../i18n/config';
 
-export default Home;
+export default PrivacyPolicy;
 
 export const Head: HeadFC = () => <>
     <title>KAF8</title>

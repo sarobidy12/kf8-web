@@ -1,9 +1,14 @@
 import * as React from "react";
 import { BtnDowload } from '../../../Common';
-import imagesave from '../../../images/Save.png';
+import saveFr from '../../../images/save-fr.png';
+import saveEn from '../../../images/save-en.png';
 import './style.css';
 
-const Save: React.FC = () => {
+interface ISave {
+    languageSelected: "en" | "fr"
+}
+
+const Save: React.FC<ISave> = ({ languageSelected }) => {
     return (
         <div className="Save">
 
@@ -11,7 +16,7 @@ const Save: React.FC = () => {
                 <BtnDowload />
             </div>
             <div>
-                <img src={imagesave} className="img-save" alt="img save" />
+                <img src={languageSelected === "fr" ? saveFr : saveEn} className="img-save" alt="img save" />
             </div>
 
         </div>

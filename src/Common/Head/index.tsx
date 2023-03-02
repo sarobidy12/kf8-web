@@ -5,6 +5,7 @@ import logoIcon from "../../images/logo.png";
 import { useTranslation, } from 'react-i18next';
 import BtnSelectLanguage from '../BtnSelectLanguage';
 import './style.css';
+import { Link } from 'gatsby';
 
 interface IHeader {
     handleOpen: () => void;
@@ -66,11 +67,14 @@ const Header: FC<IHeader> = ({
     return (
         <div className='header' id="header">
             <div>
-                <img
-                    src={logoIcon}
-                    alt='open icon'
-                    className='logo-icon'
-                />
+                <Link to='/'>
+                    <img
+                        src={logoIcon}
+                        alt='open icon'
+                        className='logo-icon'
+                    />
+                </Link>
+
             </div>
             <div>
                 <div id="btn" className='btnMobile'>

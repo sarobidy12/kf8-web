@@ -50,6 +50,35 @@
     cursor: pointer;
 }
 
+.contact-us-success{
+    background-color: greenyellow;
+    border: 1px solid #aaa;
+    padding: 1vh;
+    color: white;
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 14px;
+    margin-bottom: 1vh;
+}
+
+.contact-us-error{
+    background-color: rgba(255, 0, 0, 0.589);
+    border: 1px solid #aaa;
+    padding: 1vh;
+    color: white;
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 14px;
+    margin-bottom: 1vh;
+}
+
+
 @media (max-width:900px) {
 
  .form-contact-us{

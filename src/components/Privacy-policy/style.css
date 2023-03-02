@@ -1,0 +1,16 @@
+.root-privacy{
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Prompt';
+    font-style: normal;
+    padding-top: 17vh;
+}
+
+@media (max-width:900px) {
+
+.root-privacy{
+    width: 95%;
+    padding-top: 15vh;
+
+}
+}
