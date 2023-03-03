@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Hero from "./Hero";
 import Save from "./Save";
 import Warranty from "./Warranty";
@@ -15,10 +15,19 @@ const Home: React.FC = () => {
 
     const [languageSelected, setLanguageSelected] = useState<any>(null);
 
+    useEffect(() => {
+        (window as any).scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+        });
+    }, [])
+
     return (
         <Layout
             languageSelected={languageSelected}
             setLanguageSelected={setLanguageSelected}
+            headerWithLink={true}
         >
             <div className="root-home">
                 <Hero />

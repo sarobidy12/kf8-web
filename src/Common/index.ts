@@ -1,4 +1,3 @@
-import ModalSelectLanguage from "./ModalSelectLanguage";
 import BtnSelectLanguage from "./BtnSelectLanguage";
 import BtnDowload from "./BtnDowload";
 import Head from "./Head";
@@ -11,5 +10,4 @@ export {
   Footer,
   Layout,
   BtnSelectLanguage,
-  ModalSelectLanguage,
 };

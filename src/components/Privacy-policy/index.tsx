@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Trans, useTranslation } from 'react-i18next';
 import { Layout } from "../../Common";
 import './style.css';
@@ -8,6 +8,14 @@ const WhatYouDesktop: React.FC = () => {
     const { t } = useTranslation('privacyPolicy');
 
     const [languageSelected, setLanguageSelected] = useState<any>(null);
+
+    useEffect(() => {
+        (window as any).scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+        });
+    }, [])
 
     return (
         <Layout

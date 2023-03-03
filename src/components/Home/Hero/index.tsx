@@ -12,10 +12,10 @@ const Hero: React.FC = () => {
         <>
             <div className="root-Hero">
 
-                <div>
+                <div className="display-flex-hero">
 
                     <div
-                        className="content-Hero-right margin-15"
+                        className="content-Hero-right "
                     >
 
                         <h1

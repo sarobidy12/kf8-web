@@ -3,10 +3,12 @@ import en from "../images/flag/en.png";
 
 export const listArray = [
     {
+        label:"Francais",
         key: 'fr',
         img: fr
     },
     {
+        label:"English",
         key: 'en',
         img: en
     }

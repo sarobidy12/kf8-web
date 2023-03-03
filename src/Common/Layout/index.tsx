@@ -1,7 +1,6 @@
 import React, { useEffect, useState, FC } from "react";
 import Head from "../Head";
 import Footer from "../Footer";
-import ModalSelectLanguage from "../ModalSelectLanguage";
 import { useTranslation } from 'react-i18next';
 
 
@@ -9,18 +8,16 @@ interface ILayout {
     children: any;
     languageSelected: string;
     setLanguageSelected: (data: any) => void;
+    headerWithLink?: boolean;
 }
 
-const Layout: FC<ILayout> = ({ children, languageSelected, setLanguageSelected }) => {
+const Layout: FC<ILayout> = ({ children, languageSelected, headerWithLink, setLanguageSelected }) => {
 
     const { i18n } = useTranslation('home');
-
-    const [open, setOpen] = useState(false);
 
     const handleChangeLanguage = (lg: any) => {
         setLanguageSelected(lg.key);
         i18n.changeLanguage(lg.key);
-        setOpen(false);
     }
 
     useEffect(() => {
@@ -29,15 +26,13 @@ const Layout: FC<ILayout> = ({ children, languageSelected, setLanguageSelected }
         });
     }, []);
 
-    const handleOpen = () => {
-        setOpen(true);
-    }
-
     return (
         <div>
+
             <Head
-                handleOpen={handleOpen}
+                handleChangeLanguage={handleChangeLanguage}
                 languageSelected={languageSelected}
+                withLink={headerWithLink}
             />
 
             <div>
@@ -46,12 +41,7 @@ const Layout: FC<ILayout> = ({ children, languageSelected, setLanguageSelected }
 
             <Footer />
 
-            <ModalSelectLanguage
-                open={open}
-                setLanguage={handleChangeLanguage}
-            />
         </div>
-
     )
 }
 

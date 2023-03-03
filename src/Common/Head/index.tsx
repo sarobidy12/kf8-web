@@ -8,12 +8,15 @@ import './style.css';
 import { Link } from 'gatsby';
 
 interface IHeader {
-    handleOpen: () => void;
     languageSelected: string;
+    handleChangeLanguage: (lg: any) => void;
+    withLink?: boolean;
 }
 
 const Header: FC<IHeader> = ({
-    handleOpen, languageSelected
+    handleChangeLanguage,
+    languageSelected,
+    withLink
 }) => {
 
     const { t } = useTranslation('header');
@@ -22,6 +25,7 @@ const Header: FC<IHeader> = ({
         (document as any).getElementById('menu').style.display = 'block';
         (document as any).getElementById('Open').style.display = 'none';
         (document as any).getElementById('Close').style.display = 'block';
+        (document as any).getElementById('content-close-modal').style.display = 'block';
         (document as any).getElementById('header').style.background = 'white';
     }
 
@@ -30,6 +34,7 @@ const Header: FC<IHeader> = ({
             (document as any).getElementById('menu').style.display = 'none';
             (document as any).getElementById('Open').style.display = 'block';
             (document as any).getElementById('Close').style.display = 'none';
+            (document as any).getElementById('content-close-modal').style.display = 'none';
             (document as any).getElementById('header').style.background = 'transparent';
         }
     }
@@ -60,10 +65,6 @@ const Header: FC<IHeader> = ({
         }
     }, [])
 
-    const handleChange = (data: any) => {
-        console.log("data", data)
-    }
-
     return (
         <div className='header' id="header">
             <div>
@@ -74,7 +75,6 @@ const Header: FC<IHeader> = ({
                         className='logo-icon'
                     />
                 </Link>
-
             </div>
             <div>
                 <div id="btn" className='btnMobile'>
@@ -95,29 +95,37 @@ const Header: FC<IHeader> = ({
                 </div>
                 <div id="menu" className='menuHeader'>
                     <ul>
-                        <li>
-                            <a href="#About" onClick={close}>
-                                {t('ABOUTUS')}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#downLoad" onClick={close}>
-                                {t('DOWNLOADAPP')}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#contact-us" onClick={close}>
-                                {t('CONTACTUS')}
-                            </a>
-                        </li>
+                        {
+                            withLink && (
+                                <>
+                                    <li>
+                                        <a href="#About" onClick={close}>
+                                            {t('ABOUTUS')}
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#downLoad" onClick={close}>
+                                            {t('DOWNLOADAPP')}
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact-us" onClick={close}>
+                                            {t('CONTACTUS')}
+                                        </a>
+                                    </li>
+                                </>
+                            )
+                        }
                         <li>
                             <BtnSelectLanguage
-                                handleOpen={handleOpen} languageSelected={languageSelected}
+                                handleChangeLanguage={handleChangeLanguage}
+                                languageSelected={languageSelected}
                             />
                         </li>
                     </ul>
                 </div>
             </div>
+            <div className='content-close-modal' id='content-close-modal' onClick={close} />
         </div>
     );
 }

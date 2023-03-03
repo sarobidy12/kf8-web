@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import * as React from "react";
 import { useTranslation } from 'react-i18next';
 import './style.css';
@@ -13,7 +14,9 @@ const Footer: React.FC = () => {
                     {t('link.Legalnotices')}
                 </li>
                 <li>
-                    {t('link.CsPrivacyPolicy')}
+                    <Link to="/privacy-policy/">
+                        {t('link.CsPrivacyPolicy')}
+                    </Link>
                 </li>
             </ul>
 
