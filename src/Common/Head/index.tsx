@@ -66,67 +66,70 @@ const Header: FC<IHeader> = ({
     }, [])
 
     return (
-        <div className='header' id="header">
-            <div>
-                <Link to='/'>
-                    <img
-                        src={logoIcon}
-                        alt='open icon'
-                        className='logo-icon'
-                    />
-                </Link>
-            </div>
-            <div>
-                <div id="btn" className='btnMobile'>
-                    <div id="Open" onClick={open}>
+        <>
+            <div className='header' id="header">
+                <div>
+                    <Link to='/'>
                         <img
-                            src={menuIcon}
+                            src={logoIcon}
                             alt='open icon'
-                            className='btnOpen'
+                            className='logo-icon'
                         />
-                    </div>
-                    <div id="Close" onClick={close}>
-                        <img
-                            src={closeIcon}
-                            alt='close'
-                            className='btnOpen'
-                        />
-                    </div>
+                    </Link>
                 </div>
-                <div id="menu" className='menuHeader'>
-                    <ul>
-                        {
-                            withLink && (
-                                <>
-                                    <li>
-                                        <a href="#About" onClick={close}>
-                                            {t('ABOUTUS')}
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#downLoad" onClick={close}>
-                                            {t('DOWNLOADAPP')}
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#contact-us" onClick={close}>
-                                            {t('CONTACTUS')}
-                                        </a>
-                                    </li>
-                                </>
-                            )
-                        }
-                        <li>
-                            <BtnSelectLanguage
-                                handleChangeLanguage={handleChangeLanguage}
-                                languageSelected={languageSelected}
+                <div>
+                    <div id="btn" className='btnMobile'>
+                        <div id="Open" onClick={open}>
+                            <img
+                                src={menuIcon}
+                                alt='open icon'
+                                className='btnOpen'
                             />
-                        </li>
-                    </ul>
+                        </div>
+                        <div id="Close" onClick={close}>
+                            <img
+                                src={closeIcon}
+                                alt='close'
+                                className='btnOpen'
+                            />
+                        </div>
+                    </div>
+                    <div id="menu" className='menuHeader'>
+                        <ul>
+                            {
+                                withLink && (
+                                    <>
+                                        <li>
+                                            <a href="#About" onClick={close}>
+                                                {t('ABOUTUS')}
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#downLoad" onClick={close}>
+                                                {t('DOWNLOADAPP')}
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact-us" onClick={close}>
+                                                {t('CONTACTUS')}
+                                            </a>
+                                        </li>
+                                    </>
+                                )
+                            }
+                            <li>
+                                <BtnSelectLanguage
+                                    handleChangeLanguage={handleChangeLanguage}
+                                    languageSelected={languageSelected}
+                                />
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div className='content-close-modal' id='content-close-modal' onClick={close} />
-        </div>
+        </>
+
     );
 }
 

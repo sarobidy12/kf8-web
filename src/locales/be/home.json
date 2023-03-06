@@ -1,0 +1,86 @@
+{
+ "hero":{
+  "h1":"DE BESTE LEVERINGSOPLOSSING IN 2023",
+  "p":"Proberen kaf8 is het adopteren"
+ },
+ "WhatYouDo":{
+    "title":{
+      "h1":"Wat wij jullie bieden",
+      "p":"Dankzij de aanwezigheid van Kaf8 in Europa is het zoeken van vervoers- en bezorgdiensten nooit zo simpel geweest."
+    },
+    "FindServiceProvidersForYourShopping":{
+      "h1": "Zoek dienstenleveranciers voor uw opdrachten",
+      "p":"De databank van de dienstverleners uit uw regio over heel Europa geeft u de mogelijkheid om direct met een dienstverlener contact op te nemen (vervoerder, bezorger, enz.) maar ook om een advertentie te publiceren die overeenstemt met uw behoeften."
+    },
+    "BecomeServiceProvider":{
+      "h1": "Een dienstverlener worden",
+      "p":"Bent u een zelfstandige met een vervoermiddel die graag een extra inkomstenbron wil? Of vertegenwoordigt u een onderneming die meer zichtbaarheid wil en zijn omzet wil verhogen? <br/> Registreer u dan als dienstverlener en voeg daar uw vervoersmiddel bij en klaar."
+      
+    },
+    "TrackYourInternationalDeliveries":{
+      "h1": "Track uw internationale leveringen",
+      "p": "Bent u een internationale vervoerder? Registreer dan uw klanten bij ons in het systeem. <br/><br/> Met de trackingfunctie kunnen ze in real time het verloop van hun internationale pakket tot de bestemming volgen."
+    }
+ },
+ "NewExplication":{
+  "title":{
+    "h1":"Dagelijks zijn er tientallen diensten beschikbaar in uw regio"
+  }
+ },
+ "about":{
+  "title":{
+    "h1":"Over ons",
+    "p":"Het startte toen <bold> Marc GONCALVES, CEO van Kf8 Transconnect </bold>, zijn verhuizing zelf wilde regelen. Al vlug ontdekte hij hoe moeilijk het was om een betrouwbare dienstverlener te vinden ( zowel particulieren als professionelen) waarvan de tarieven niet \"klant gestuurd\" waren. Hoewel er kwalitatief goede vervoersdiensten bestaan, deze zijn voor de gemiddelde consument niet of slechts beperkt zichtbaar en op elk moment toegankelijk.<br/>Zo ontstond het concept waarbij dienstverleners die hun webzichtbaarheid willen verhogen en regelmatige of occasionele particuliere dienstverleners op eenzelfde platform en ten dienste van de opdrachtgever worden samengebracht. <bold> Vandaag, bestuurders van fietsen, scooters, auto's, camions, sleepwagens of opleggers </bold> hebben hun vertrouwen in ons geschonken en hebben de controle. De evolutie van de uitwisseling op nationaal en internationaal niveau brengt de realisatie van de vracht met zich en nodigt ons daarom uit tot een nieuwe attitude, tot een andere manier van kijken ten aanzien van onze manier van leven, van onze organisatie: die van dienstbaarheid aan de naaste. Zo heeft zich een netwerk gevormd als mieren met een hele organisatie, een discipline die er voor zorgt dat we in de juiste richting blijven gaan.<br/>De oplossing functioneert dankzij de optie om elke aanbieder, ongeacht wie hij is, de optie te bieden om onmiddellijk het tarief te berekenen dat het best past bij diverse factoren, zoals zijn locatie, het type vervoermiddel dat hij gebruikt, de weeromstandigheden, de verkeerstoestand, enz... en dit met respect voor de klant.<br/>Kf8Transconnect is een community die zich dankzij u groeit en ontwikkelt.<br />Kaf8 is de kracht van een netwerk.<br />Kaf8 nodigt u uit om op de trein te springen, die van excellentie.<br />"
+  }
+  },
+"OurGuarantees":{
+  "title":{
+    "h1":"Onze zekerheden"
+  },
+  "Security":{
+    "h1":"Veiligheid",
+    "p":"De veiligheid is de prioriteit bij Kaf8 en is verbonden met de zoektocht naar essentiële normen zoals eerlijkheid, betrouwbaarheid en respect."
+  },
+  "Punctuality":{
+    "h1":"Stiptheid",
+    "p":"Stiptheid is een gouden regel. In overleg met beide partijen kan de prestatie worden vertraagd."
+  },
+  "Assurance":{
+    "h1":"Verzekering",
+    "p":"Kaf8 is de verzekering voor een snelle kwaliteitsdienst, 24 uur per dag, met dienstverleners die aandacht hebben voor het detail en die u na elke dienst een beoordeling kunnen geven."
+  }
+},
+"DownLoad":{
+  "title":{
+    "h1":"DOWNLOAD SNEL DE APPLICATIE OP"
+  }
+},
+"ContactUs":{
+  "title":{
+    "h1":"Neem contact",
+    "p":"Twijfel niet om contact met ons op te nemen. Wij beantwoorden u graag zo snel mogelijk."
+  },
+  "YourName":{
+    "label":"Uw naam",
+    "placeholder":"Vul hier uw naam in"
+  },
+  "EmailAddress":{
+    "label":"E-mailadres",
+    "placeholder":"Vul hier uw e-mailadres"
+  },
+  "Message":{
+    "label":"Bericht",
+    "placeholder":"Beschrijf uw verzoek..."
+  },
+  "btn":{
+    "label":"Verzenden",
+    "loading":"bezig met laden..."
+  },
+  "error":{
+    "label":"er is een fout opgetreden"
+  },
+  "success":{
+    "label":"Bericht is verzonden"
+  }
+}
+}

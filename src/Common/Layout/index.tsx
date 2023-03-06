@@ -1,6 +1,7 @@
 import React, { useEffect, useState, FC } from "react";
 import Head from "../Head";
 import Footer from "../Footer";
+import BtnSrollTop from "../BtnSrollTop";
 import { useTranslation } from 'react-i18next';
 
 
@@ -38,6 +39,8 @@ const Layout: FC<ILayout> = ({ children, languageSelected, headerWithLink, setLa
             <div>
                 {children}
             </div>
+
+            <BtnSrollTop />
 
             <Footer />
 

@@ -34,6 +34,12 @@ i18n
         header: require("../locales/en/header.json"),
         privacyPolicy: require("../locales/en/privacy-policy.json"),
       },
+      be: {
+        home: require("../locales/be/home.json"),
+        footer: require("../locales/be/footer.json"),
+        header: require("../locales/be/header.json"),
+        privacyPolicy: require("../locales/be/privacy-policy.json"),
+      },
     },
     ns: ["home", "footer", "header", "privacyPolicy"],
     //   defaultNS: "translations",
