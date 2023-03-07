@@ -2,14 +2,22 @@
     width:90%;
 }
 
-.ul-dowload{
+.row{
     margin: 5vh 0;
 }
 
-.ul-dowload li{
+.row li{
     margin-top: 2vh;
     display: inline-block;
     margin-right: 4vh;
+}
+
+.coloum{
+    margin: 5vh 0;
+}
+
+.coloum li{
+    margin-top: 1.5vh;
 }
 
 @media (max-width:900px) {
@@ -20,14 +28,14 @@
         margin-top: 10%;
     }
     
-    .ul-dowload{
+    .row{
         width: 50%;
         margin: 3vh auto;
         list-style-type: none;
         padding: 0;
     }
 
-    .ul-dowload li{
+    .row li{
         padding: 0;
         margin-top: 2vh;
         margin-right: 0;

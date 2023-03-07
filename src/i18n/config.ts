@@ -27,21 +27,24 @@ i18n
         footer: require("../locales/fr/footer.json"),
         header: require("../locales/fr/header.json"),
         privacyPolicy: require("../locales/fr/privacy-policy.json"),
+        dowload: require("../locales/fr/dowload.json"),
       },
       en: {
         home: require("../locales/en/home.json"),
         footer: require("../locales/en/footer.json"),
         header: require("../locales/en/header.json"),
         privacyPolicy: require("../locales/en/privacy-policy.json"),
+        dowload: require("../locales/en/dowload.json"),
       },
       be: {
         home: require("../locales/be/home.json"),
         footer: require("../locales/be/footer.json"),
         header: require("../locales/be/header.json"),
         privacyPolicy: require("../locales/be/privacy-policy.json"),
+        dowload: require("../locales/be/dowload.json"),
       },
     },
-    ns: ["home", "footer", "header", "privacyPolicy"],
+    ns: ["home", "footer", "header", "privacyPolicy", "dowload"],
     //   defaultNS: "translations",
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default

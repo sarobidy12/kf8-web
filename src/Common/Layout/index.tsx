@@ -1,4 +1,4 @@
-import React, { useEffect, useState, FC } from "react";
+import React, { useEffect, FC } from "react";
 import Head from "../Head";
 import Footer from "../Footer";
 import BtnSrollTop from "../BtnSrollTop";

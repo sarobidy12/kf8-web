@@ -21,8 +21,9 @@ const Save: React.FC<ISave> = ({ languageSelected }) => {
         <div className="Save">
 
             <div className="view-save-desktop">
-                <BtnDowload />
+                <BtnDowload direction='row' />
             </div>
+            
             <div>
                 <img src={getImg?.[languageSelected] || ""} className="img-save" alt="img save" />
             </div>

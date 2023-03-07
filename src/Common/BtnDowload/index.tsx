@@ -1,22 +1,41 @@
-import * as React from "react";
-import dowloadAndroid from "../../images/dowloadAndroid.png";
-import dowloadApple from "../../images/dowloadApple.png";
+import React, { FC } from "react";
+import googlePlayStore from "../../images/google-play-store.png";
+import appleAppStore from "../../images/apple-app-store.png";
+import { Trans, useTranslation } from 'react-i18next';
+import Content from './Content';
 import './style.css';
 
-const Hero: React.FC = () => {
+interface IBtnDowload {
+    direction: 'row' | 'coloum'
+}
+
+const BtnDowload: FC<IBtnDowload> = ({
+    direction
+}) => {
+
+    const { t } = useTranslation('dowload');
+
     return (
 
-        <ul className="ul-dowload">
+        <ul className={direction}>
             <li>
-                <img src={dowloadAndroid} alt="dowload android" className="img-dowload" />
+                <Content
+                    img={googlePlayStore}
+                    p={t('android')}
+                    h3="Google Play Store"
+                />
             </li>
             <li>
-                <img src={dowloadApple} alt="dowload apple" className="img-dowload" />
+                <Content
+                    img={appleAppStore}
+                    p={t('apple')}
+                    h3="App Store"
+                />
             </li>
         </ul>
 
     )
 }
 
-export default Hero;
+export default BtnDowload;
 

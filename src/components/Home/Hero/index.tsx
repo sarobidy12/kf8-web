@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
                         </p>
 
                         <div className="view-desktop">
-                            <BtnDowload />
+                            <BtnDowload direction='row' />
                         </div>
 
                     </div>
@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
                     </div>
 
                     <div className="view-mobil">
-                        <BtnDowload />
+                        <BtnDowload direction='row' />
                     </div>
 
                 </div>
